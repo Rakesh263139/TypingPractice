@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>typing practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Audio Controls -->
+  <div class="audio-controls">
+    <audio id="bg-music" loop autoplay>
+      <source src="/media/23.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button id="play-music-btn">🎵 Play Music</button>
+    <button id="pause-music-btn" class="hidden">🔇 Pause Music</button>
+  </div>
+
+  <!-- Welcome Screen -->
+  <div class="welcome-screen" id="welcome-screen">
+    <h1>🌟 Welcome to the Typing Adventure! 🌟</h1>
+    <p class="quote">"Practice makes perfect! Ready to type like a pro?"</p>
+    <label for="name-input">Enter Your Name:</label>
+    <input type="text" id="name-input" placeholder="Your Name" />
+    <label for="timer-select">Select Timer:</label>
+    <select id="timer-select">
+      <option value="15">15 Seconds</option>
+      <option value="30">30 Seconds</option>
+      <option value="60">60 Seconds</option>
+    </select>
+    <button id="start-test-btn">🎯 Start Adventure</button>
+  </div>
+
+  <!-- Test Screen -->
+  <div class="test-screen hidden" id="test-screen">
+    <h2 id="welcome-user">Hi, Typist!</h2>
+    <div class="speedometer-container">
+      <div class="speedometer">
+        <div class="needle" id="needle"></div>
+        <div class="wpm-display" id="wpm-display">0 WPM</div>
+      </div>
+      <div class="speedometer-labels">
+        <span>0 WPM</span>
+        <span style="float: right;">100 WPM</span>
+      </div>
+    </div>
+    <div class="typing-area">
+      <div id="text-to-type">Loading a fun text for you...</div>
+      <input type="text" id="typing-input" placeholder="Type here..." />
+    </div>
+    <div class="timer-display" id="timer-display">Time Left: 0s</div>
+  </div>
+
+  <!-- Result Screen -->
+  <div class="result-screen hidden" id="result-screen">
+    <h2>🎉 Results 🎉</h2>
+    <p id="result-name"></p>
+    <p id="result-speed">Your Speed: <span>0</span> WPM</p>
+    <p id="result-accuracy">Accuracy: <span>0%</span></p>
+    <button id="restart-btn">🔁 Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

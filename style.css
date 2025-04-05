@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Audio Controls */
+.audio-controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.audio-controls button {
+  background-color: #FFB6C1;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.audio-controls button:hover {
+  background-color: #FF69B4;
+}
+
+/* Welcome Screen */
+.welcome-screen {
+  text-align: center;
+}
+
+.welcome-screen h1 {
+  font-size: 2.5rem;
+  color: #FF69B4;
+}
+
+.welcome-screen input,
+.welcome-screen select {
+  padding: 8px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.welcome-screen button {
+  background-color: #FFB6C1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.welcome-screen button:hover {
+  background-color: #FF69B4;
+}
+
+/* Test Screen */
+.test-screen {
+  text-align: center;
+}
+
+.speedometer-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.speedometer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #FF69B4;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.needle {
+  position: absolute;
+  width: 4px;
+  height: 100px;
+  background-color: #FF69B4;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: rotate(-90deg);
+}
+
+.wpm-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #FF69B4;
+}
+
+.typing-area {
+  margin-top: 30px;
+}
+
+.typing-area input {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.timer-display {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Result Screen */
+.result-screen {
+  text-align: center;
+}
+
+.result-screen h2 {
+  font-size: 2.5rem;
+  color: #FF69B4;
+}
+
+.result-screen button {
+  background-color: #FFB6C1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result-screen button:hover {
+  background-color: #FF69B4;
+}
